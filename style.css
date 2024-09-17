@@ -1,20 +1,114 @@
-body{
-/*     display: flex;
-    justify-content: center; */
-    background-color: rgb(192, 154, 48);
-  }
-  #container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      background-color: rgb(192, 154, 48);
-      color: black;
-/*       width: 25%; */
-  }
-  #child {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+#container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+#container:hover {
+  transform: translateY(-10px);
+}
+
+#container h1 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#value {
+  width: calc(100% - 24px);
+  padding: 15px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#value:focus {
+  border-color: #007bff;
+}
+
+button#addNote {
+  padding: 12px 24px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+button#addNote:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+ul#noteList {
+  list-style-type: none;
+  margin-top: 20px;
+  padding-left: 0;
+}
+
+ul#noteList li {
+  background-color: #f1f3f5;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+ul#noteList li:nth-child(odd) {
+  background-color: #e9ecef;
+}
+
+ul#noteList li:hover {
+  background-color: #dfe4ea;
+}
+
+ul#noteList li button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+ul#noteList li button:hover {
+  background-color: #c82333;
+}
