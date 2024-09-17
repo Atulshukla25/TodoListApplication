@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(146, 143, 143);
+  }
+  #container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      background-color: rgb(26, 24, 22);
+      color: white;
+      width: 25%;
+  }
+  #child {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
