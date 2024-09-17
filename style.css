@@ -1,8 +1,8 @@
-/* body{
-    display: flex;
-    justify-content: center;
-    background-color: rgb(146, 143, 143);
-  } */
+body{
+/*     display: flex;
+    justify-content: center; */
+    background-color: rgb(192, 154, 48);
+  }
   #container {
     display: flex;
     justify-content: center;
