@@ -1,17 +1,18 @@
-/* style.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   background: linear-gradient(120deg, #89f7fe, #66a6ff);
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   overflow: hidden;
-  padding-top: 40px; /* Add space at the top */
 }
 
 #container {
@@ -22,11 +23,8 @@ body {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 400px;
-  margin: 0 auto; /* Center horizontally */
   text-align: center;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  position: relative;
-  top: 0; /* Ensures it is positioned at the top */
 }
 
 #container:hover {
@@ -35,7 +33,7 @@ body {
 }
 
 h1 {
-  color: #0c0b0b;
+  color: #312e2e;
   font-size: 2.5rem;
   margin-bottom: 25px;
   font-weight: bold;
